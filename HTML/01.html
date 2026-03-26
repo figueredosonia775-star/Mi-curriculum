@@ -1,0 +1,104 @@
+<!DOCTYPE html> <!-- Define el tipo de documento como HTML5 -->
+<html lang="es"> <!-- Establece el idioma del sitio a español -->
+<head> <!-- Inicio del encabezado del documento -->
+    <meta charset="UTF-8"> <!-- Codificación de caracteres universal -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Asegura que el sitio sea responsivo en móviles -->
+    <title>Sonia Figueredo | Portfolio Developer</title> <!-- Título que aparece en la pestaña del navegador -->
+    <link rel="stylesheet" href="../CSS/01.css"> <!-- Enlace a la hoja de estilos externa -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Orbitron:wght@500;700&display=swap" rel="stylesheet"> <!-- Fuentes de Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <!-- Librería de iconos Font Awesome -->
+</head> <!-- Cierre del encabezado -->
+<body> <!-- Inicio del cuerpo de la página -->
+
+    <div class="circle circle-1"></div> <!-- Elemento decorativo: Círculo de fondo 1 -->
+    <div class="circle circle-2"></div> <!-- Elemento decorativo: Círculo de fondo 2 -->
+
+    <div class="container"> <!-- Contenedor principal con efecto cristal -->
+        <header class="header-main"> <!-- Encabezado principal del CV -->
+            <div class="profile-area"> <!-- Área de imagen de perfil -->
+                <img src="../IMAGEN/perfil.jpeg" alt="Sonia Figueredo" class="profile-pic"> <!-- Foto del profesional -->
+            </div>
+            <div class="title-area"> <!-- Área de texto central (Nombre y Título) -->
+                <h1>Sonia Figueredo</h1> <!-- Nombre principal -->
+                <p class="subtitle">Desarrolladora de Software | Estudiante de Ingeniería</p> <!-- Cargo o especialidad -->
+            </div>
+            <div class="actions-area"> <!-- Área de botones interactivos a la derecha -->
+                <button id="btn-contact" class="btn-glow"><i class="fas fa-paper-plane"></i> Contacto</button> <!-- Botón para abrir modal de contacto -->
+                <button id="btn-theme" class="btn-glow"><i class="fas fa-moon"></i> Modo</button> <!-- Botón para cambiar el tema visual -->
+            </div>
+        </header> <!-- Cierre del encabezado -->
+
+        <main> <!-- Contenido principal del documento -->
+            <section class="section scroll-reveal"> <!-- Sección de resumen profesional -->
+                <h2><i class="fas fa-user-astronaut"></i> Sobre mí</h2> <!-- Título con icono -->
+                <p>Soy desarrolladora en formación y actualmente estudio la carrera de Informática, donde he adquirido conocimientos en programación, bases de datos y desarrollo de sistemas. Me apasiona la tecnología y la creación de soluciones digitales que faciliten procesos y mejoren la experiencia de las personas.</p>
+                <p>A lo largo de mi formación, he trabajado en proyectos como sistemas de gestión, lo que me ha permitido fortalecer mis habilidades técnicas y mi capacidad de análisis y resolución de problemas. Disfruto aprender constantemente y adaptarme a nuevas herramientas y tecnologías.</p>
+                <p>Mi objetivo profesional es convertirme en una desarrolladora completa, capaz de crear aplicaciones eficientes e innovadoras, especialmente en el ámbito web. Aspiro a seguir creciendo en el área tecnológica, contribuir a proyectos de impacto y desarrollar soluciones que generen valor en la sociedad.</p>
+            </section>
+
+            <section class="section scroll-reveal"> <!-- Sección de habilidades técnicas -->
+                <h2><i class="fas fa-code"></i> Habilidades</h2> <!-- Título de sección -->
+                <div class="skills-grid"> <!-- Rejilla para mostrar habilidades -->
+                    <div class="skill-item"> <!-- Item individual -->
+                        <span>Informática / Gestión de Sistemas</span>
+                        <div class="progress-bar"><div class="progress" style="width: 80%"></div></div>
+                    </div>
+                    <div class="skill-item"> <!-- Item individual de habilidad -->
+                        <span>Java / NetBeans</span> <!-- Nombre de la tecnología -->
+                        <div class="progress-bar"><div class="progress" style="width: 85%"></div></div> <!-- Barra de progreso animada -->
+                    </div>
+                    <div class="skill-item"> <!-- Item individual -->
+                        <span>MySQL / Bases de Datos</span>
+                        <div class="progress-bar"><div class="progress" style="width: 75%"></div></div>
+                    </div>
+                    <div class="skill-item"> <!-- Item individual -->
+                        <span>HTML5 / CSS3 / JS</span>
+                        <div class="progress-bar"><div class="progress" style="width: 25%"></div></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section scroll-reveal"> <!-- Sección de experiencia -->
+                <h2><i class="fas fa-briefcase"></i> Experiencia Destacada</h2>
+                <div class="card"> <!-- Tarjeta de proyecto o trabajo -->
+                    <h3>Gestión de Tienda Veterinaria</h3> <!-- Título del proyecto -->
+                    <span class="job-date">Proyecto de Desarrollo - Java & MySQL</span> <!-- Fecha o tipo de trabajo -->
+                    <p>Desarrollé una aplicación de escritorio utilizando <strong>NetBeans</strong>, orientada a la gestión de una tienda veterinaria, con el objetivo de optimizar el control de clientes, proveedores, productos y ventas. El sistema fue implementado con una base de datos en <strong>MySQL</strong>, permitiendo el almacenamiento estructurado y seguro de la información. Durante el desarrollo, apliqué principios de programación, diseño de interfaces y manejo de bases de datos, logrando una solución funcional que mejora la organización y eficiencia de los procesos comerciales del negocio.</p>
+                </div>
+            </section>
+
+            <section class="section scroll-reveal"> <!-- Sección de educación -->
+                <h2><i class="fas fa-graduation-cap"></i> Educación</h2>
+                <div class="card"> <!-- Tarjeta de educación -->
+                    <h3>Ingeniería en Sistemas</h3>
+                    <p><strong>Universidad Nacional de Villarrica del Espíritu Santo (UNVES)</strong></p>
+                    <span class="job-date">Actualmente cursando la carrera</span> <!-- Estado de la carrera -->
+                </div>
+            </section>
+        </main> <!-- Cierre del contenido principal -->
+
+        <footer class="footer-main"> <!-- Pie de página con acciones finales -->
+            <button class="btn-secondary" onclick="window.print()"><i class="fas fa-download"></i> Descargar CV</button> <!-- Botón para imprimir/descargar -->
+            <p class="footer-credits">© 2026 Sonia Figueredo - Desarrollado con ❤️ y Código</p> <!-- Créditos finales -->
+        </footer>
+    </div> <!-- Cierre del contenedor principal -->
+
+    <!-- Modal de Contacto -->
+    <div id="contact-modal" class="modal"> <!-- Estructura oculta del modal -->
+        <div class="modal-content glass"> <!-- Contenido del modal con efecto cristal -->
+            <span class="close-modal">&times;</span> <!-- Botón para cerrar modal -->
+            <h2><i class="fas fa-envelope-open-text"></i> Conectemos</h2> <!-- Título del modal -->
+            <div class="contact-links"> <!-- Enlaces de contacto -->
+                <a href="https://wa.me/595981661205" target="_blank" class="contact-item"> <!-- Link directo a WhatsApp -->
+                    <i class="fab fa-whatsapp"></i> WhatsApp: (0981) 661205
+                </a>
+                <a href="mailto:figueredosonia775@gmail.com" class="contact-item"> <!-- Link de correo electrónico -->
+                    <i class="fas fa-at"></i> figueredosonia775@gmail.com
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../JAVASCRIPT/01.js" defer></script> <!-- Usamos la carpeta JAVASCRIPT y el atributo defer para asegurar la carga -->
+</body>
+</html>
